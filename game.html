@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chicken Invadors</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="game-wrapper">
+        <div class="game">
+          <div class="score">
+            <img src="Images/chicken.png" />
+            <span id="score">0</span>
+          </div>
+
+          <div class="lives">
+            <img src="Images/lives.webp" />
+            <span id="lives" style="color: red">5</span>
+          </div>
+
+          <!-- Music game -->
+          <div class="music-game">
+            <div class="mute">
+              <a href="#"><img id="mute" src="Images/music-chicken.png" /></a>
+            </div>
+            <div id="mute_icon">
+              <a href="#"><img src="Images/mute_chick.png" /></a>
+            </div>
+          </div>
+
+          <!-- Game over -->
+          <div class="game-over">
+            <h2>GAME OVER</h2>
+            <img src="Images/chicken-won.gif" />
+            <h2 class="score_modal"></h2>
+            <button class="btn" onclick="window.location.reload()">
+              Restart
+            </button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <script src="js/Config.js"></script>
+    <script src="js/Game.js"></script>
+    <script src="js/Helper.js"></script>
+    <script src="js/Enemy.js"></script>
+    <script src="js/Laser.js"></script>
+    <script src="js/Player.js"></script>
+    <script src="js/Present.js"></script>
+    <script src="js/LaserIncrease.js"></script>
+    <script src="js/modal.js"></script>
+
+    <script src="Main.js"></script>
+  </body>
+</html>
